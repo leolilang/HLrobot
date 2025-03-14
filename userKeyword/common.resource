@@ -28,8 +28,8 @@ AIOS_login
     Input Text    ${解螺旋登录页-验证码登录-验证码输入框}    ${verification_code}
     Sleep    500ms
     Click Element    ${解螺旋登录页-密码登录-登录按钮}
-    Sleep    3s
-    ${local_token}=    Execute JavaScript  return JSON.parse(localStorage.getItem('token')).data
+    Sleep    5s
+    ${local_token}=    Execute JavaScript  return JSON.parse(localStorage.getItem('user_token')).data
     Log    local_token:${local_token}
     ${var_token}=     Set Variable    ${local_token}
     Log    var_token:${var_token}
@@ -40,4 +40,4 @@ AIOS_logout
     Mouse Over    ${AIOS首页-用户头像}
     Click Element    ${AIOS首页-退出登录}
     Sleep    3s
-    Title Should Be    登录
+    Title Should Be    登录-AIOS

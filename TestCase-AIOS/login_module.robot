@@ -9,7 +9,7 @@ Resource          ../userKeyword/common.resource
 *** Test Cases ***
 login_vip
     AIOS_login    ${URL}    ${browser_type}    ${username}    ${verification_code}
-    Title Should Be    首页
+    Title Should Be    首页-AIOS
     AIOS_logout
     Close Browser
 

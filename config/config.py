@@ -7,7 +7,7 @@ username = 18274988398    # 登录的账户名
 username_non_vip = 18374988390    # 登录的账户名
 password = "123!@#qqwQQW"    # 登录密码
 verification_code = 123456    # 默认的验证码
-URL = "https://aios.helixlife.net/"    # 访问地址
+URL = "https://aiospc.helixlife.net/"    # 访问地址
 
 
 

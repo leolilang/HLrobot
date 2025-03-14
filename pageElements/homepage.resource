@@ -2,15 +2,16 @@
 Library           Selenium2Library
 
 *** Variables ***
-${AIOS首页-logo}    XPATH=//img[@class='logo']
+${AIOS首页-logo}    XPATH=//img[@class='logo-icon']
 ${AIOS首页-搜索}      XPATH=//div[@class='tl-item message']
 ${AIOS首页-搜索输入框}    XPATH=//input[@placeholder='请输入搜索关键词']
+${homepage_question_icon}    XPATH=//a[@class='nav-helps pb-bg-img el-tooltip__trigger el-tooltip__trigger']
 ${AIOS首页-搜索输入框-取消按钮}    XPATH=//img[@class='iconClosed']
 
-${AIOS首页-用户头像}    XPATH=//img[@class='user-img']
+${AIOS首页-用户头像}    XPATH=//img[@class='user-icon']
 ${AIOS首页-账号设置}    XPATH=//span[text()='账号设置']
-${AIOS首页-秘钥设置}    XPATH=//span[text()='秘钥设置']
-${AIOS首页-退出登录}    XPATH=//div[text()=' 退出登录 ']
+${AIOS首页-秘钥设置}    XPATH=//span[text()='密钥设置']
+${AIOS首页-退出登录}    XPATH=//div[text()='退出登录']
 ${AIOS首页-导航栏-首页}      XPATH=//*[@id="app"]/div[1]/section/div[3]/div/div[1]/div[1]
 
 ${AIOS首页-拖动上传框}    XPATH=//div[@class="el-upload-dragger"]
