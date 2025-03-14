@@ -1,3 +1,40 @@
+# helixlife 项目介绍
+
+## 项目概述
+本仓库主要围绕 Robot Framework 自动化测试框架展开，包含测试用例、关键字库、配置文件、数据文件以及相关文档等，用于实现自动化测试各种功能，可进行功能测试、验收测试等多种类型的测试
+
+## 仓库整体架构
+
+### 架构图（文本描述）
+- 根目录
+  - `.gitignore`
+  - `README.md`（本文件）
+  - `__init__.txt`
+  - `TestCase-AIOS` 文件夹
+  - `userKeyword` 文件夹
+  - `data` 文件夹
+  - `config` 文件夹
+  - `library` 文件夹
+  - `pageElements` 文件夹
+
+### 各部分详细说明
+
+#### 根目录文件
+- **.gitignore**：用于指定在使用 Git 版本控制时需要忽略的文件和目录，通常包含一些临时文件、编译产物等，避免这些文件被提交到版本库中。
+- **README.md**：即本文件，对项目的整体介绍，包括架构、各文件和文件夹的作用和使用方法等。
+- **__init__.txt**：占位或说明文件，可能用于标识项目的初始化信息，但具体作用需根据项目实际情况确定。
+
+#### `TestCase-AIOS` 文件夹
+该文件夹主要存放各种测试用例文件，按照不同的功能模块进行划分。
+- **__init__.txt**：占位或说明文件。
+- **accessKey_module.robot**：关于访问密钥相关功能的 Robot Framework 测试用例文件，用于测试与访问密钥有关的业务逻辑。例如，在该文件中可能会有如下测试用例：
+```robot
+*** Test Cases ***
+Test Access Key Generation
+    # 这里填写具体的测试步骤，如调用相关关键字来生成访问密钥并验证
+    Generate Access Key
+    Verify Access Key Format
+
 # RobotFramework 简介、安装和使用指南
 
 ## 一、RobotFramework 简介
